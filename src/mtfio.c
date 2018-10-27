@@ -71,8 +71,7 @@ mtfio_handle_p mtfio_open (char* path) {
                 pthread_mutex_init (&mtfio_handle_db[current_handle]->mutex, NULL);
                 strncpy (mtfio_handle_db[current_handle]->path, path, strlen (path) + 1);
         }
-        mtfio_handle_db[current_handle]->num_threads++;
-        mtfio_handle_db[current_handle]->locked = 0;
+        mtfio_handle_db[current_handle]->num_threads;
         struct mtfio_handle *ret_pointer = mtfio_handle_db[current_handle];
         pthread_mutex_unlock (&oc_mutex);
         return ((void*)ret_pointer);
