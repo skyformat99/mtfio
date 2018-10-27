@@ -4,7 +4,7 @@ build:
 	ranlib libmtfio.a
 	cp ./src/mtfio.h ./
 	rm ./mtfio.o
-	mv *bmtf* ../cliaf/bin/static
-	mv *mtf* ../cliaf/bin
+	mv *bmtf* ../test/bin/static
+	mv *mtf* ../test/bin
 
 
